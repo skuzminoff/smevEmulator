@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="urn://x-artefacts-smev-gov-ru/services/message-exchange/types/1.1" xmlns:ns1="urn://x-artefacts-smev-gov-ru/services/message-exchange/types/basic/1.1">
+	<soapenv:Header/>
+	<soapenv:Body>
+		<ns:AckRequest>
+			<ns2:AckTargetMessage xmlns:ns2="urn://x-artefacts-smev-gov-ru/services/message-exchange/types/basic/1.1" xmlns="urn://x-artefacts-smev-gov-ru/services/message-exchange/types/1.1" Id="ID_SIGN" accepted="true"><!--412843a9-218a-11e6-8e98-78e3b589a999--></ns2:AckTargetMessage>
+			<ns:CallerInformationSystemSignature>
+				<!--<ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+					<ds:SignedInfo>
+						<ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+						<ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#gostr34102001-gostr3411"/>
+						<ds:Reference URI="#SIGNED_BY_CALLER">
+							<ds:Transforms>
+								<ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+								<ds:Transform Algorithm="urn://smev-gov-ru/xmldsig/transform"/>
+							</ds:Transforms>
+							<ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#gostr3411"/>
+							<ds:DigestValue>WgW9M8rGMXscIiFfmigRYR5UsKJi4+UUfx178jnUicI=</ds:DigestValue>
+						</ds:Reference>
+					</ds:SignedInfo>
+					<ds:SignatureValue>4Kza2kCmrXTCWredQZKTkj9C63GGaMBflwzpgo9za00HZV9r7MPaqxQ9aY4uZORbHmCjaK0KTWmkmM/Zm+wgZA==</ds:SignatureValue>
+					<ds:KeyInfo>
+						<ds:X509Data>
+							<ds:X509Certificate>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</ds:X509Certificate>
+						</ds:X509Data>
+					</ds:KeyInfo>
+				</ds:Signature>-->
+			</ns:CallerInformationSystemSignature>
+		</ns:AckRequest>
+	</soapenv:Body>
+</soapenv:Envelope>

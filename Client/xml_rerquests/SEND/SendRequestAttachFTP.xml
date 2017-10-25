@@ -1,0 +1,28 @@
+﻿<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="urn://x-artefacts-smev-gov-ru/services/message-exchange/types/1.1">
+	<S:Body>
+		<ns2:SendRequestRequest xmlns:ns3="urn://x-artefacts-smev-gov-ru/services/message-exchange/types/faults/1.1" xmlns:ns2="urn://x-artefacts-smev-gov-ru/services/message-exchange/types/1.1" xmlns="urn://x-artefacts-smev-gov-ru/services/message-exchange/types/basic/1.1">
+			<ns:SenderProvidedRequestData Id="ID_SIGN" xmlns="urn://x-artefacts-smev-gov-ru/services/message-exchange/types/1.1" xmlns:ns="urn://x-artefacts-smev-gov-ru/services/message-exchange/types/1.1" xmlns:ns2="urn://x-artefacts-smev-gov-ru/services/message-exchange/types/basic/1.1">
+				<ns:MessageID>
+					<!-- Message ID -->
+				</ns:MessageID>
+				<ns2:MessagePrimaryContent>
+					<!-- Business data -->
+				</ns2:MessagePrimaryContent>
+				<ns2:RefAttachmentHeaderList>
+					<!-- Attachemnt header
+					<ns2:RefAttachmentHeader>
+						<ns2:uuid>e74b2cb9-5aa3-11e4-a9ff-d4c9eff07b77</ns2:uuid>
+						<ns2:Hash>VpT3sc999CJI8TVYX35ZZfXpc/dCWO5e1MgoUg8YiJA=</ns2:Hash>
+						<ns2:MimeType>image/jpeg</ns2:MimeType>
+						<ns2:SignaturePKCS7>MIICyAYJKoZIhvcNAQcCoIICuTCCArUCAQExDDAKBgYqhQMCAgkFADALBgkqhkiG9w0BBwGgggGLMIIBhzCCATagAwIBAgIFAMFdkFQwCAYGKoUDAgIDMC0xEDAOBgNVBAsTB1NZU1RFTTExDDAKBgNVBAoTA09WMjELMAkGA1UEBhMCUlUwHhcNMTQwMjIxMTMzNDMyWhcNMTUwMjIxMTMzNDMyWjAtMRAwDgYDVQQLEwdTWVNURU0xMQwwCgYDVQQKEwNPVjIxCzAJBgNVBAYTAlJVMGMwHAYGKoUDAgITMBIGByqFAwICJAAGByqFAwICHgEDQwAEQLjcuMDezt3MrljIr+54Cy64Gvgy8uuGgTpjvlrDAkiGdTL/m9EDDJvMARnMjzSb1JTxovUWfTV8j2bns+KZXNyjOzA5MA4GA1UdDwEB/wQEAwID6DATBgNVHSUEDDAKBggrBgEFBQcDAjASBgNVHRMBAf8ECDAGAQH/AgEFMAgGBiqFAwICAwNBAMVRmhKGKFtRbBlGLl++KtOAvm96C5wnj+6L/wMYpw7Gd7WBM21Zqh9wu+3eZotglDsJMEYbKgiLRprSxKz+DHsxggEEMIIBAAIBATA2MC0xEDAOBgNVBAsTB1NZU1RFTTExDDAKBgNVBAoTA09WMjELMAkGA1UEBhMCUlUCBQDBXZBUMAoGBiqFAwICCQUAoGkwGAYJKoZIhvcNAQkDMQsGCSqGSIb3DQEHATAcBgkqhkiG9w0BCQUxDxcNMTQxMDI4MDg1ODAzWjAvBgkqhkiG9w0BCQQxIgQgVpT3sc999CJI8TVYX35ZZfXpc/dCWO5e1MgoUg8YiJAwCgYGKoUDAgITBQAEQIXxbWJSNu/oGOxFOKcDO5wE1riXWDqyffOPZnIfoUk3QNI/qvRas+0V+713qvOL9iGQ3QrKFD1PkeJVditDDP4=</ns2:SignaturePKCS7>
+					</ns2:RefAttachmentHeader>
+					-->
+				</ns2:RefAttachmentHeaderList>
+				<ns:TestMessage/>
+			</ns:SenderProvidedRequestData>
+			<ns2:CallerInformationSystemSignature>
+				<!-- Signature -->
+			</ns2:CallerInformationSystemSignature>
+		</ns2:SendRequestRequest>
+	</S:Body>
+</S:Envelope>

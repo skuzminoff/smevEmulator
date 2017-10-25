@@ -1,0 +1,15 @@
+﻿<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="urn://x-artefacts-smev-gov-ru/services/message-exchange/types/1.1">
+	<S:Body>
+		<ns2:SendRequestRequest xmlns:ns3="urn://x-artefacts-smev-gov-ru/services/message-exchange/types/faults/1.1" xmlns:ns2="urn://x-artefacts-smev-gov-ru/services/message-exchange/types/1.1" xmlns="urn://x-artefacts-smev-gov-ru/services/message-exchange/types/basic/1.1">
+			<ns:SenderProvidedRequestData Id="ID_SIGN" xmlns="urn://x-artefacts-smev-gov-ru/services/message-exchange/types/1.1" xmlns:ns2="urn://x-artefacts-smev-gov-ru/services/message-exchange/types/basic/1.1">
+				<ns:MessageID><!-- Message ID --></ns:MessageID>
+				<ns2:MessagePrimaryContent>
+					<!-- Business data -->
+				</ns2:MessagePrimaryContent>
+			</ns:SenderProvidedRequestData>
+			<ns2:CallerInformationSystemSignature>
+				<!-- Signature -->
+			</ns2:CallerInformationSystemSignature>
+		</ns2:SendRequestRequest>
+	</S:Body>
+</S:Envelope>

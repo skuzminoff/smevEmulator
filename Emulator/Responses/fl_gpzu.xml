@@ -1,0 +1,122 @@
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+  <S:Body>
+    <ns2:GetRequestResponse xmlns="urn://x-artefacts-smev-gov-ru/services/message-exchange/types/basic/1.1" xmlns:ns2="urn://x-artefacts-smev-gov-ru/services/message-exchange/types/1.1" xmlns:ns3="urn://x-artefacts-smev-gov-ru/services/message-exchange/types/faults/1.1">
+      <ns2:RequestMessage>
+        <ns2:Request Id="SIGNED_BY_SMEV">
+          <ns2:SenderProvidedRequestData Id="SIGNED_BY_CONSUMER">
+            <ns2:MessageID>582fa07c-5e7f-11e4-a9ff-d4c9eff07b77</ns2:MessageID>
+            <MessagePrimaryContent>
+              <GpzuRequest xmlns:grad="urn://x-artefacts-grad-gpzu/common/1.1.0" xmlns:ns3="urn://x-artefacts-smev-gov-ru/supplementary/commons/1.0.1" xmlns="urn://x-artefacts-grad/gpzu-service/1.0.0">
+                <ServiceProviderId>vladivostoksky_go</ServiceProviderId>
+                <Body>
+                  <grad:Subject>
+                    <grad:Person>
+                      <ns3:FamilyName>Сидоров</ns3:FamilyName>
+                      <ns3:FirstName>Иван</ns3:FirstName>
+                      <ns3:Patronymic>Петрович</ns3:Patronymic>
+                      <grad:RegistrationAddress>край Приморский, г. Владивосток, ул. Рабочая 10-я, дом 132</grad:RegistrationAddress>
+                      <grad:Email>sekr@primorsky.ru</grad:Email>
+                      <grad:Telephone>+7 (0000) 00 00 00</grad:Telephone>
+                    </grad:Person>
+                  </grad:Subject>
+                  <grad:IsAttorneyInCharge>true</grad:IsAttorneyInCharge>
+                  <grad:Attorney>
+                    <grad:ContentId>Doverennost.png</grad:ContentId>
+                  </grad:Attorney>
+                  <grad:ParcelInfo>
+                    <grad:Area>1200</grad:Area>
+                    <grad:CadastralNumber>25:27:070102:870</grad:CadastralNumber>
+                    <grad:CadastralDate>2016-08-16</grad:CadastralDate>
+                    <grad:Location>край Приморский, г. Артем, ул. Рабочая 2-я</grad:Location>
+                    <grad:OksInfo>Расположен объект капитального строительства</grad:OksInfo>
+                    <grad:OknInfo>Расположен объект культурного наследия</grad:OknInfo>
+                  </grad:ParcelInfo>
+                  <grad:MethodNotificationInfo>
+                    <grad:MethodNotification>1</grad:MethodNotification>
+                    <grad:Email>sekr@primorsky.ru</grad:Email>
+                    <grad:Telephone>+7 (0000) 00 00 00</grad:Telephone>
+                  </grad:MethodNotificationInfo>
+                  <grad:TypeDelivery>2</grad:TypeDelivery>
+                </Body>
+              </GpzuRequest>
+            </MessagePrimaryContent>
+            <AttachmentHeaderList>
+              <AttachmentHeader>
+                <contentId>Doverennost.png</contentId>
+                <MimeType>image/png</MimeType>
+              </AttachmentHeader>
+            </AttachmentHeaderList>
+          </ns2:SenderProvidedRequestData>
+          <ns2:MessageMetadata>
+            <ns2:MessageType>REQUEST</ns2:MessageType>
+            <ns2:Sender>
+              <ns2:Mnemonic>OV_2</ns2:Mnemonic>
+              <ns2:HumanReadableName>Я_ИС_РОИВ1</ns2:HumanReadableName>
+            </ns2:Sender>
+            <ns2:SendingTimestamp>2014-10-28T12:50:17.107+04:00</ns2:SendingTimestamp>
+            <ns2:Recipient>
+              <ns2:Mnemonic>mtfoiv1</ns2:Mnemonic>
+              <ns2:HumanReadableName>МТ_ИС_ФОИВ1</ns2:HumanReadableName>
+            </ns2:Recipient>
+            <ns2:SupplementaryData>
+              <ns2:DetectedContentTypeName>МТ_ВС_ФОИВ1</ns2:DetectedContentTypeName>
+              <ns2:InteractionType>NotDetected</ns2:InteractionType>
+            </ns2:SupplementaryData>
+            <ns2:DeliveryTimestamp>2014-10-28T13:06:49.506+04:00</ns2:DeliveryTimestamp>
+          </ns2:MessageMetadata>
+          <ns2:ReplyTo>6488|x-artefacts-grad/gpzu-service/1.0.0"|582fa07c-5e7f-11e4-a9ff-d4c9eff07b77</ns2:ReplyTo>
+          <ns2:SenderInformationSystemSignature>
+            <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+              <ds:SignedInfo>
+                <ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+                <ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#gostr34102001-gostr3411"/>
+                <ds:Reference URI="#SIGNED_BY_CONSUMER">
+                  <ds:Transforms>
+                    <ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+                    <ds:Transform Algorithm="urn://smev-gov-ru/xmldsig/transform"/>
+                  </ds:Transforms>
+                  <ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#gostr3411"/>
+                  <ds:DigestValue>jTP0hndqPRXO9O+5euAtKsysn83a9+gVkvUpojGTL84=</ds:DigestValue>
+                </ds:Reference>
+              </ds:SignedInfo>
+              <ds:SignatureValue>i3PzufK7XEmCtElirdXqtYh7/CdZCIIgowfj+TbBHPw/Mk+1YA+/LSdIM3MO2tcH8ZeFA5e04VSz0deGcnVAaA==</ds:SignatureValue>
+              <ds:KeyInfo>
+                <ds:X509Data>
+                  <ds:X509Certificate>MIIBhzCCATagAwIBAgIFAMFdkFQwCAYGKoUDAgIDMC0xEDAOBgNVBAsTB1NZU1RFTTExDDAKBgNVBAoTA09WMjELMAkGA1UEBhMCUlUwHhcNMTQwMjIxMTMzNDMyWhcNMTUwMjIxMTMzNDMyWjAtMRAwDgYDVQQLEwdTWVNURU0xMQwwCgYDVQQKEwNPVjIxCzAJBgNVBAYTAlJVMGMwHAYGKoUDAgITMBIGByqFAwICJAAGByqFAwICHgEDQwAEQLjcuMDezt3MrljIr+54Cy64Gvgy8uuGgTpjvlrDAkiGdTL/m9EDDJvMARnMjzSb1JTxovUWfTV8j2bns+KZXNyjOzA5MA4GA1UdDwEB/wQEAwID6DATBgNVHSUEDDAKBggrBgEFBQcDAjASBgNVHRMBAf8ECDAGAQH/AgEFMAgGBiqFAwICAwNBAMVRmhKGKFtRbBlGLl++KtOAvm96C5wnj+6L/wMYpw7Gd7WBM21Zqh9wu+3eZotglDsJMEYbKgiLRprSxKz+DHs=</ds:X509Certificate>
+                </ds:X509Data>
+              </ds:KeyInfo>
+            </ds:Signature>
+          </ns2:SenderInformationSystemSignature>
+        </ns2:Request>
+        <AttachmentContentList>
+          <AttachmentContent>
+            <Id>Doverennost.png</Id>
+            <Content>iVBORw0KGgoAAAANSUhEUgAABIAAAAKICAIAAACHSRZaAAAAAXNSR0IArs4c6QAAAARnQU1BAACx jwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAABwsSURBVHhe7d1teuPGtYXRjMsD8ng8Gk8mg0nY 3ZItqXnAQn1sFsS1/t4r6KAAkeeN/ST/+R8AAAARAgwAACBEgAEAAIQIMAAAgBABBgAAECLAAAAA QgQYAABAiAADAAAIEWAAAAAhAgwAACBEgAEAAIQIMAAAgBABBgAAECLAAAAAQgQYAABAiAADAAAI EWAAAAAhAgwAACBEgAEAAIQIMAAAgBABBgAAECLAAAAAQgQYAABAiAADAAAIEWAAAAAhAgwAACBE gAEAAIQIMAAAgBABBgAAECLAAAAAQgQYAABAiAADAAAIEWAAAAAhAgwAACBEgAEAAIQIMAAAgBAB BgAAECLAAAAAQgQYAABAiAADAAAIEWAAAAAhAgwAACBEgAEAAIQIMAAAgBABBgAAECLAAAAAQgQY AABAiAADAAAIEWAAAAAhAgwAACBEgAEAAIQIMAAAgBABBgAAECLAAAAAQgQYAABAiAADAAAIEWAA AAAhAgwAACBEgAEAAIQIMAAAgBABBgAAECLAAAAAQgQYAABAiAADAAAIEWAAAAAhAgwAACBEgAEA AIQIMAAAgBABBgAAECLAAAAAQgQYAABAiAADAAAIEWAAAAAhAgwAACBEgAEAAIQIMAAAgBABBgAA ECLAAAAAQgQYAABAiAADAAAIEWAAAAAhAgwAACBEgAEAAIQIMAAAgBABBgAAECLAAAAAQgQYAABA iAADAAAIEWAAAAAhAgwAACBEgPFN/PevP/6zzh9//fft9wAAQD8Bxrfw959vpbTOn3+//S4AAOgl wPgOAv2lwAAAGCfA+AbW/uuH7wQYAACjBBjfQOQfgAkwAACGCTC+AQEGAMA1CDCuL/NvIAowAACG CTCur/oHYJ3/3fHV5QQYAACjBBjXN7mYBBgAAKsIMC6v+jcQe//HkwUYAACrCDAub/K/gSjAAABY RoBxebODSYABALCKAOPqZv8biAIMAIBlBBhXN72XBBgAAKsIMC6u/B8BE2AAAGxHgHFxVS51/xuI zwiwh/9T0v1306C64SNLB7rjcMb0ML8pn194sr1PiQbP/SioHLxY/nMpgA4CjIubn0vzr1h4uGvd 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 WgKMzfzeODvtvntPxzgBBgCsJcAAPrj3jzn//Pvt/wgAMEiAAQAAhAgwAACAEAEGAAAQIsAAAABC BBgAAECIAAMAAAgRYAAAACECDAAAIESAAQAAhAgwAACAEAEGAAAQIsAAAABCBBgAAECIAAMAAAgR YAAAACECDAAAIESAAQAAhAgwAACAEAEGAAAQIsAAAABCBBgAAECIAAMAAAgRYAAAACECDAAAIESA AQAAhAgwAACAEAEGAAAQIsAAAABCBBgAAECIAAMAAAgRYAAAACECDAAAIESAAQAAhAgwAACAEAEG AAAQIsAAAABCBBgAAECIAAMAAAgRYAAAACECDAAAIESAAQAAhAgwAACAEAEGAAAQIsAAAABCBBgA AECIAAMAAAgRYAAAACECDAAAIESAAQAAhAgwAACAEAEGAAAQIsAAAABCBBgAAECIAAMAAAgRYAAA ACECDAAAIESAAQAAhAgwAACAEAEGAAAQIsAAAABCBBgAAECIAAMAAAgRYAAAACECDAAAIESAAQAA hAgwAACAEAEGAAAQIsAAAABCBBgAAECIAAMAAAgRYAAAACECDAAAIESAAQAAhAgwAACAEAEGAAAQ IsAAAABCBBgAAECIAAMAAAgRYAAAACECDAAAIESAAQAAhAgwAACAEAEGAAAQIsAAAABCBBgAAECI AAMAAAgRYAAAACECDAAAIESAAQAAhAgwAACAEAEGAAAQIsAAAABCBBgAAECIAAMAAAgRYAAAACEC DAAAIESAAQAAhAgwAACAEAEGAAAQIsAAAABCBBgAAECIAAMAAAgRYAAAACECDAAAIESAAQAAhAgw AACAEAEGAAAQIsAAAABCBBgAAECIAAMAAAgRYAAAACECDAAAIESAAQAAhAgwAACAEAEGAAAQIsAA AABCBBgAAECIAAMAAAgRYAAAACECDAAAIESAAQAAhAgwAACAEAEGAAAQIsAAAABCBBgAAECIAAMA AAgRYAAAACECDAAAIESAAQAAhAgwAACAEAEGAAAQIsAAAABCBBgAAECIAAMAAAgRYAAAACECDAAA IESAAQAAhAgwAACAEAEGAAAQIsAAAABCBBgAAECIAAMAAAgRYAAAACECDAAAIESAAQAAhAgwAACA EAEGAAAQIsAAAABCBBgAAECIAAMAAAgRYAAAACECDAAAIESAAQAAhAgwAACAEAEGAAAQIsAAAABC BBgAAECIAAMAAAgRYAAAACECDAAAIESAAQAAhAgwAACAEAEGAAAQIsAAAABCBBgAAECIAAMAAAgR YAAAACECDAAAIESAAQAAhAgwAACAEAEGAAAQIsAAAABCBBgAAECIAAMAAAgRYAAAACECDAAAIESA AQAAhAgwAACAEAEGAAAQIsAAAABCBBgAAECIAAMAAAgRYAAAACECDAAAIESAAQAAhAgwAACAEAEG AAAQIsAAAABCBBgAAECIAAMAAAgRYAAAACECDAAAIESAAQAAhAgwAACAEAEGAAAQIsAAAABCBBgA AECIAAMAAAgRYAAAACECDAAAIESAAQAAhAgwAACAEAEGAAAQIsAAAABCBBgAAECIAAMAAAgRYAAA ACECDAAAIESAAQAAhAgwAACAEAEGAAAQIsAAAABCBBgAAECIAAMAAAgRYAAAACECDAAAIESAAQAA hAgwAACAEAEGAAAQIsAAAABCBBgAAECIAAMAAAgRYAAAACECDAAAIESAAQAAhAgwAACAEAEGAAAQ IsAAAABCBBgAAECIAAMAAAgRYAAAACECDAAAIESAAQAAhAgwAACAEAEGAAAQIsAAAABCBBgAAECI AAMAAAgRYAAAACECDAAAIESAAQAAhAgwAACAEAEGAAAQIsAAAABCBBgAAECIAAMAAAgRYAAAACEC DAAAIESAAQAAhAgwAACAEAEGAAAQIsAAAABCBBgAAECIAAMAAAgRYAAAACECDAAAIESAAQAAhAgw AACAEAEGAAAQIsAAAABCBBgAAECIAAMAAAgRYAAAACECDAAAIESAAQAAhAgwAACAEAEGAAAQIsAA AABCBBgAAECIAAMAAAgRYAAAACECDAAAIESAAQAAhAgwAACAEAEGAAAQIsAAAABCBBgAAECIAAMA AAgRYAAAACECDAAAIESAAQAAhAgwAACAEAEGAAAQIsAAAABCBBgAAECIAAMAAAgRYAAAACECDAAA IESAAQAAhAgwAACAEAEGAAAQIsAAAABCBBgAAECIAAMAAAgRYAAAACECDAAAIESAAQAAhAgwAACA EAEGAAAQIsAAAABCBBgAAECIAAMAAAgRYAAAACECDAAAIESAAQAAhAgwAACAEAEGAAAQIsAAAABC BBgAAECIAAMAAAgRYAAAACECDAAAIESAAQAAhAgwAACAEAEGAAAQIsAAAABCBBgAAECIAAMAAAgR YAAAACECDAAAIESAAQAAhAgwAACAEAEGAAAQIsAAAABCBBgAAECIAAMAAAgRYAAAACECDAAAIESA AQAAhAgwAACAEAEGAAAQIsAAAABCBBgAAECIAAMAAAgRYAAAACECDAAAIESAAQAAhAgwAACAEAEG AAAQIsAAAABCBBgAAECIAAMAAAgRYAAAACECDAAAIESAAQAAhAgwAACAEAEGAAAQIsAAAABCBBgA AECIAAMAAAgRYAAAACECDAAAIESAAQAAhAgwAACAEAEGAAAQIsAAAABCBBgAAECIAAMAAAgRYAAA ACECDAAAIESAAQAAhAgwAACAEAEGAAAQIsAAAABCBBgAAECIAAMAAAgRYAAAACECDAAAIESAAQAA hAgwAACAEAEGAAAQIsAAAABCBBgAAECIAAMAAAgRYAAAACECDAAAIESAAQAAhAgwAACAEAEGAAAQ IsAAAABCBBgAAECIAAMAAAgRYAAAACECDAAAIESAAQAAhAgwAACAEAEGAAAQIsAAAABCBBgAAECI AAMAAAgRYAAAACECDAAAIESAAQAAhAgwAACAEAEGAAAQIsAAAABCBBgAAECIAAMAAAgRYAAAACEC DAAAIESAAQAAhAgwAACAEAEGAAAQIsAAAABCBBgAAECIAAMAAAgRYAAAACECDAAAIESAAQAAhAgw AACAEAEGAAAQIsAAAABCBBgAAECIAAMAAAgRYAAAACECDAAAIESAAQAAhAgwAACAEAEGAAAQIsAA AABCBBgAAECIAAMAAAgRYAAAACECDAAAIESAAQAAhAgwAACAEAEGAAAQIsAAAABCBBgAAECIAAMA AAgRYAAAACECDAAAIESAAQAAhAgwAACAEAEGAAAQIsAAAABCBBgAAECIAAMAAAgRYAAAACECDAAA IESAAQAAhAgwAACAEAEGAAAQIsAAAABCBBgAAECIAAMAAAgRYAAAACECDAAAIESAAQAAhAgwAACA EAEGAAAQIsAAAABCBBgAAECIAAMAAAgRYAAAACECDAAAIESAAQAAhAgwAACAEAEGAAAQIsAAAABC BBgAAECIAAMAAAgRYAAAACECDAAAIESAAQAAhAgwAACAEAEGAAAQIsAAAABCBBgAAECIAAMAAAgR YAAAACECDAAAIESAAQAAhAgwAACAEAEGAAAQIsAAAABCBBgAAECIAAMAAAgRYAAAACECDAAAIOJ/ //s/EOZ2/OqFpooAAAAASUVORK5CYII=</Content>
+          </AttachmentContent>
+        </AttachmentContentList>
+        <ns2:SMEVSignature>
+          <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+            <ds:SignedInfo>
+              <ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+              <ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#gostr34102001-gostr3411"/>
+              <ds:Reference URI="#SIGNED_BY_SMEV">
+                <ds:Transforms>
+                  <ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+                  <ds:Transform Algorithm="urn://smev-gov-ru/xmldsig/transform"/>
+                </ds:Transforms>
+                <ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#gostr3411"/>
+                <ds:DigestValue>fs2jGCcoK/07ZTFUWqUgohpiFWySI5pfyFDvaTpGKXE=</ds:DigestValue>
+              </ds:Reference>
+            </ds:SignedInfo>
+            <ds:SignatureValue>yeVF4oF3qfHbIZTbkHrKPnbiD1kOs0hD7DffipIdrv0/qv3/iJBrL8E4M/SH7nUjewDMgVtynCC4pedcGzDeHw==</ds:SignatureValue>
+            <ds:KeyInfo>
+              <ds:X509Data>
+                <ds:X509Certificate>MIIBozCCAVKgAwIBAgIFAMWImyYwCAYGKoUDAgIDMDYxGDAWBgNVBAsTD0NsaWVudENvbm5lY3RvcjENMAsGA1UEChMEU01FVjELMAkGA1UEBhMCUlUwHhcNMTQwMjE4MDU1MzU1WhcNMTUwMjE4MDU1MzU1WjA2MRgwFgYDVQQLEw9DbGllbnRDb25uZWN0b3IxDTALBgNVBAoTBFNNRVYxCzAJBgNVBAYTAlJVMGMwHAYGKoUDAgITMBIGByqFAwICJAAGByqFAwICHgEDQwAEQJCa1MMgJZn4H66ixt5crBZ8JGlNILbYQJwZdvlvPnXB/5EiFx+j8x6xhwUR2zJMk3Vv4fh+FyaV0ADzY7SF2GqjRTBDMA4GA1UdDwEB/wQEAwID6DAdBgNVHSUEFjAUBggrBgEFBQcDAgYIKwYBBQUHAwEwEgYDVR0TAQH/BAgwBgEB/wIBBTAIBgYqhQMCAgMDQQBca4YCB+42EH5gHwrsBdbpHhZZ5gzanx57u4CQG26txZn49mR/6XmPkXqAE4gN9JwwpIuG61ZVPTRjpYOAGISK</ds:X509Certificate>
+              </ds:X509Data>
+            </ds:KeyInfo>
+          </ds:Signature>
+        </ns2:SMEVSignature>
+      </ns2:RequestMessage>
+    </ns2:GetRequestResponse>
+  </S:Body>
+</S:Envelope>
